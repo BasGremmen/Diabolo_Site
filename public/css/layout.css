@@ -1,0 +1,381 @@
+/*!
+ * Start Bootstrap - Blog Home (https://startbootstrap.com/template-overviews/blog-home)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-blog-home/blob/master/LICENSE)
+ */
+html {
+	height: 100%;
+}
+body {
+  padding-top: 54px;
+  background: #000000;
+  background-image: url('/img/general/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  padding-bottom: 200px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.btn-primary {
+	background: #780116;
+	border: none;
+	color: #000000;
+}
+
+.btn {
+	border: none;
+}
+
+.btn:hover {
+	background-color: #FED766;
+	border: none;
+}
+
+.bg-gray {
+	background: #666666;
+}
+
+.row {
+}
+
+.card-footer {
+	color: #000000;
+}
+
+a {
+	color: #FAF3DD;
+	font-style: none;
+}
+
+a:hover {
+	color: #FAF3DD;
+	font-style: none;
+	text-decoration: none;
+}
+
+.navbar {
+	border-bottom: none;
+	max-height: 54px;
+}
+
+.border-yellow {
+	border: solid 1px #FED766;
+}
+
+.navbar-brand{
+	color: #FED766;
+	max-height: 70px;
+	padding-top: 15px;
+}
+
+.navbar-brand img {
+	max-height: 60px;
+}
+
+.bg-black-opaque {
+	background: black;
+}
+
+.card-text {
+	color: #FAF3DD;
+}
+
+hr {
+	color: #FED766;
+	background: #FED766;
+}
+
+.border-none {
+	border: none;
+}
+
+.card-img-top {
+	padding: 3px 3px 0px 3px;
+	background: black;
+	height: 400px;
+}
+
+.padding-3px {
+	padding: 3px;
+}
+
+.main-container {
+	min-height: 85vh;
+	margin-top: 10px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: #FED766;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+	color: #EDC966;
+}
+
+.username-link {
+	color: #FED766;
+}
+
+.username-link:hover {
+	color: #780116;
+}
+
+.big-block {
+	color: #FAF3DD;
+	padding: 0px 20px 25px 20px;
+}
+
+.yellow-text {
+	color: #FED766;
+}
+
+.lazari {
+	color:#FAF3DD;
+	display: inline-block;
+	width: 100%;
+	margin: 3px;
+	text-align: left;
+	padding: 3px;
+}
+
+.lazari > .row > .col-sm-3 {
+	margin-right: 0px;
+}
+
+.lazari > .row > .col-sm-9 {
+	margin: 20px 0px 20px 0px;
+	padding: 5px;
+	border-top: 1px solid #FED766;
+}
+
+.img-square {
+	width: 150px;
+	height: 150px;
+	border: 1px #FED766 solid;
+	background: #666666;
+}
+
+.img-square:hover {
+	border: 1px solid #780116;
+}
+
+.right-align {
+	text-align: left;
+}
+
+.file-input {
+	background: none;
+	color: #FAF3DD;
+	border: none;
+}
+
+.form-control {
+	border: 1px #FED766 solid;
+	color:#FAF3DD;
+	background: #666666;
+	border-radius: 0px; 
+}
+
+div > h4 {
+	color: #FBF5F3;
+}
+
+div > h5 {
+	color: #FED766;
+}
+
+.about-col > img {
+	border: 1px solid #FED766;
+	width: 100%;
+}
+
+.about-col {
+	padding: 0px 5px 0px 5px;
+}
+
+.col-md-8 > hr {
+	margin: 5px 0px 5px 0px;
+}
+
+.big-block {
+	margin-bottom: 10px;
+}
+
+.list-unstyled li a {
+	color: #FAF3DD;
+}
+
+.list-unstyled li a:hover {
+	color: #FED766;
+}
+
+.card-header {
+	border: 1px solid #FED766;
+	background: #780116;
+}
+
+.forget_password {
+	color: #FAF3DD;
+}
+
+h2 a {
+	color: #FED766;
+}
+
+.user-style {
+	background: #666666;
+}
+
+.jumbotron {
+	background-image: url('/img/general/banner.jpg');
+	background-size: 100%;
+	height: 400px;
+}
+
+.main-container {
+	background: #222222;
+	padding-top: 10%;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,1+100 */
+	background: -moz-linear-gradient(top, rgba(32,32,32,0) , rgba(32,32,32,.7) 300px); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(32,32,32,0) ,rgba(32,32,32,.7) 300px); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(32,32,32,0) ,rgba(32,32,32,.7) 300px); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#222222',GradientType=0 ); /* IE6-9 */
+}
+
+.line-left {
+	border-left: 1px solid #FED766;
+}
+
+footer {
+	background: black;
+}
+
+.white-text {
+	color: #FAF3DD;
+}
+
+.navbar-dark {
+	background: rgba(0,0,0,0.8);
+}
+
+a h6 {
+	color: #780116;
+	text-align:center;
+}
+
+.col-md-8 p {
+	color: #FAF3DD;
+}
+
+div h1 {
+	color: #FED766;
+}
+
+.activity-list {
+	border-left: 1px #780116 solid;
+	padding-top: 3px;
+}
+
+.activity-list a div {
+	border-left: 3px #FED766 solid;
+	margin: 5px 0px 5px 10px;
+	padding: 3px 0px 3px 10px;
+	transition: 0.3s;
+
+}
+
+.activity-list a:hover div {
+	margin-left: 15px;
+	border-left: 5px #FED766 solid;
+	color: #FED766;
+	transition: 0.3s;
+}
+
+.activity-list a:hover div h3 {
+	color: #FED766;
+	transition: 0.3s;
+}
+
+.activity-list div h3 {
+	color: #FAF3DD;
+	transition: 0.3s;
+}
+
+.activity-list div h4 {
+	color: #FED766;
+}
+
+.activity-list a div h4 i {
+	color: black;
+}
+
+.activity-list a:hover div h4 i {
+	color: #FAF3DD;
+}
+
+.activity-show h1 {
+	color: #FED766;
+}
+
+.activity-show h6 {
+	color: #FAF3DD;
+}
+
+.activity-show p::first-letter {
+	font-size:1.5em;
+	color: #FBF5F3;
+}
+
+.activity-show p {
+	color: #FAF3DD;
+}
+
+.card-body,.card {
+	border: none;
+}
+
+.card-body p {
+	color: #FAF3DD;
+}
+
+.card-body p:first-child:first-letter {
+	color: #FBF5F3;
+	font-size:1.5em;
+}
+
+div .col-sm-4 img {
+	max-height: 30em;
+	width: 100%;
+	border:#FED766 1px solid;
+	margin:auto;
+}
+
+div .col-sm-4 video {
+	min-width: auto;
+	max-height: auto;
+	width: 100%;
+	height: 100%;
+	left:0;
+	top:0;
+	position:relative;
+	border: 1px #FED766 solid;
+}
+
+.row .col-md-12 a div {
+	margin-bottom: 10px;
+}
+
+.card {
+	background: black;
+}
+
+.card .row {
+	padding: 3px;
+}
