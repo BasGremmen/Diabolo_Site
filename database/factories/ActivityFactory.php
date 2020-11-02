@@ -8,7 +8,8 @@ $factory->define(App\Activity::class, function (Faker $faker) {
     	'body' => $faker->paragraphs(3,true),
     	'user_id' => rand(0,50),
     	'category_id' => rand(0,4),
-    	'date' => date('Y-m-d',mt_rand(1111111,11111111))
+    	'date' => date('Y-m-d',mt_rand(1111111,11111111)),
+    	'deo' => rand(0,1)
         //
     ];
 });

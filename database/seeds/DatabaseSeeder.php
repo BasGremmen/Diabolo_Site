@@ -11,8 +11,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-         $this->call(UsersTableSeeder::class);
-         $this->call(PostTableSeeder::class);
+        Eloquent::unguard();
+         $this->call('UsersTableSeeder');
          $this->call(ActivityTableSeeder::class);
          $this->call(CategoryTableSeeder::class);
     }
