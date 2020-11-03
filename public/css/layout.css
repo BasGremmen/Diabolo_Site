@@ -3,12 +3,20 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-blog-home/blob/master/LICENSE)
  */
+ :root{
+ 	--white: #FAF3DD;
+ 	--darkred: #780116;
+ 	--yellow: #FED766;
+
+ }
+
+
 html {
 	height: 100%;
 }
 body {
   padding-top: 54px;
-  background: #000000;
+  background: var(--white);
   background-image: url('/img/general/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -24,9 +32,9 @@ body {
 }
 
 .btn-primary {
-	background: #780116;
+	background: var(--darkred);
 	border: none;
-	color: #000000;
+	color: var(--white);
 }
 
 .btn {
@@ -34,7 +42,7 @@ body {
 }
 
 .btn:hover {
-	background-color: #FED766;
+	background-color: var(--yellow);
 	border: none;
 }
 
@@ -46,16 +54,16 @@ body {
 }
 
 .card-footer {
-	color: #000000;
+	color: var(--white);
 }
 
 a {
-	color: #FAF3DD;
+	color: var(--white);
 	font-style: none;
 }
 
 a:hover {
-	color: #FAF3DD;
+	color: var(--white);
 	font-style: none;
 	text-decoration: none;
 }
@@ -66,11 +74,11 @@ a:hover {
 }
 
 .border-yellow {
-	border: solid 1px #FED766;
+	border: solid 1px var(--yellow);
 }
 
 .navbar-brand{
-	color: #FED766;
+	color: var(--yellow);
 	max-height: 70px;
 	padding-top: 15px;
 }
@@ -84,12 +92,12 @@ a:hover {
 }
 
 .card-text {
-	color: #FAF3DD;
+	color: var(--white);
 }
 
 hr {
-	color: #FED766;
-	background: #FED766;
+	color: var(--yellow);
+	background: var(--yellow);
 }
 
 .border-none {
@@ -112,7 +120,7 @@ hr {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-	color: #FED766;
+	color: var(--yellow);
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
@@ -120,24 +128,24 @@ hr {
 }
 
 .username-link {
-	color: #FED766;
+	color: var(--yellow);
 }
 
 .username-link:hover {
-	color: #780116;
+	color: var(--darkred);
 }
 
 .big-block {
-	color: #FAF3DD;
+	color: var(--white);
 	padding: 0px 20px 25px 20px;
 }
 
 .yellow-text {
-	color: #FED766;
+	color: var(--yellow);
 }
 
 .lazari {
-	color:#FAF3DD;
+	color:var(--white);
 	display: inline-block;
 	width: 100%;
 	margin: 3px;
@@ -152,18 +160,18 @@ hr {
 .lazari > .row > .col-sm-9 {
 	margin: 20px 0px 20px 0px;
 	padding: 5px;
-	border-top: 1px solid #FED766;
+	border-top: 1px solid var(--yellow);
 }
 
 .img-square {
 	width: 150px;
 	height: 150px;
-	border: 1px #FED766 solid;
+	border: 1px var(--yellow) solid;
 	background: #666666;
 }
 
 .img-square:hover {
-	border: 1px solid #780116;
+	border: 1px solid var(--darkred);
 }
 
 .right-align {
@@ -172,13 +180,13 @@ hr {
 
 .file-input {
 	background: none;
-	color: #FAF3DD;
+	color: var(--white);
 	border: none;
 }
 
 .form-control {
-	border: 1px #FED766 solid;
-	color:#FAF3DD;
+	border: 1px var(--yellow) solid;
+	color:var(--white);
 	background: #666666;
 	border-radius: 0px; 
 }
@@ -188,11 +196,11 @@ div > h4 {
 }
 
 div > h5 {
-	color: #FED766;
+	color: var(--yellow);
 }
 
 .about-col > img {
-	border: 1px solid #FED766;
+	border: 1px solid var(--yellow);
 	width: 100%;
 }
 
@@ -209,24 +217,24 @@ div > h5 {
 }
 
 .list-unstyled li a {
-	color: #FAF3DD;
+	color: var(--white);
 }
 
 .list-unstyled li a:hover {
-	color: #FED766;
+	color: var(--yellow);
 }
 
 .card-header {
-	border: 1px solid #FED766;
-	background: #780116;
+	border: 1px solid var(--yellow);
+	background: var(--darkred);
 }
 
 .forget_password {
-	color: #FAF3DD;
+	color: var(--white);
 }
 
 h2 a {
-	color: #FED766;
+	color: var(--yellow);
 }
 
 .user-style {
@@ -250,7 +258,7 @@ h2 a {
 }
 
 .line-left {
-	border-left: 1px solid #FED766;
+	border-left: 1px solid var(--yellow);
 }
 
 footer {
@@ -258,7 +266,7 @@ footer {
 }
 
 .white-text {
-	color: #FAF3DD;
+	color: var(--white);
 }
 
 .navbar-dark {
@@ -266,25 +274,25 @@ footer {
 }
 
 a h6 {
-	color: #780116;
+	color: var(--darkred);
 	text-align:center;
 }
 
 .col-md-8 p {
-	color: #FAF3DD;
+	color: var(--white);
 }
 
 div h1 {
-	color: #FED766;
+	color: var(--yellow);
 }
 
 .activity-list {
-	border-left: 1px #780116 solid;
+	border-left: 1px var(--darkred) solid;
 	padding-top: 3px;
 }
 
 .activity-list a div {
-	border-left: 3px #FED766 solid;
+	border-left: 3px var(--yellow) solid;
 	margin: 5px 0px 5px 10px;
 	padding: 3px 0px 3px 10px;
 	transition: 0.3s;
@@ -293,23 +301,23 @@ div h1 {
 
 .activity-list a:hover div {
 	margin-left: 15px;
-	border-left: 5px #FED766 solid;
-	color: #FED766;
+	border-left: 5px var(--yellow) solid;
+	color: var(--yellow);
 	transition: 0.3s;
 }
 
 .activity-list a:hover div h3 {
-	color: #FED766;
+	color: var(--yellow);
 	transition: 0.3s;
 }
 
 .activity-list div h3 {
-	color: #FAF3DD;
+	color: var(--white);
 	transition: 0.3s;
 }
 
 .activity-list div h4 {
-	color: #FED766;
+	color: var(--yellow);
 }
 
 .activity-list a div h4 i {
@@ -317,15 +325,15 @@ div h1 {
 }
 
 .activity-list a:hover div h4 i {
-	color: #FAF3DD;
+	color: var(--white);
 }
 
 .activity-show h1 {
-	color: #FED766;
+	color: var(--yellow);
 }
 
 .activity-show h6 {
-	color: #FAF3DD;
+	color: var(--white);
 }
 
 .activity-show p::first-letter {
@@ -334,7 +342,7 @@ div h1 {
 }
 
 .activity-show p {
-	color: #FAF3DD;
+	color: var(--white);
 }
 
 .card-body,.card {
@@ -342,7 +350,7 @@ div h1 {
 }
 
 .card-body p {
-	color: #FAF3DD;
+	color: var(--white);
 }
 
 .card-body p:first-child:first-letter {
@@ -353,7 +361,7 @@ div h1 {
 div .col-sm-4 img {
 	max-height: 30em;
 	width: 100%;
-	border:#FED766 1px solid;
+	border:var(--yellow) 1px solid;
 	margin:auto;
 }
 
@@ -365,7 +373,7 @@ div .col-sm-4 video {
 	left:0;
 	top:0;
 	position:relative;
-	border: 1px #FED766 solid;
+	border: 1px var(--yellow) solid;
 }
 
 .row .col-md-12 a div {

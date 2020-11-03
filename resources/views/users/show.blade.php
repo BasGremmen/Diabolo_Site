@@ -93,7 +93,7 @@
   
   				@empty ($user->image)
   	
-    				<img class="img-fluid border-yellow" src="{{url('/img/general/default.jpg')}}">
+    				<img class="img-fluid border-yellow" src="{{url($files[rand(0, count($files) - 1)])}}">
     
   				@endempty
                 

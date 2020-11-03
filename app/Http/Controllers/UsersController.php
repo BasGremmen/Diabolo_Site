@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\User;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\File;
 
 class UsersController extends Controller
 {
@@ -21,7 +23,8 @@ class UsersController extends Controller
 		$users = $users->groupBy('year');
 		$usersByYear = $users;
 
-		return view('users.overview',compact('users','usersByYear'));
+		$files = File::allFiles('img\general\default');	
+		return view('users.overview',compact('users','usersByYear'))->with('files',$files);
 	}
 
     public function index()
@@ -29,14 +32,15 @@ class UsersController extends Controller
 		$users = User::all()->sortByDesc('year');
 		$users = $users->groupBy('year');
 		$usersByYear = $users;
-		
-		return view('users.overview',compact('users','usersByYear'));
+
+		$files = File::allFiles('img\general\default');			
+		return view('users.overview',compact('users','usersByYear'))->with('files',$files);
 	}
 	
 	public function show(User $user)
 	{
-		
-		return view('users.show',compact('user'));
+		$files = File::allFiles('img\general\default');	
+		return view('users.show',compact('user'))->with('files',$files);
 	}
 	
 	public function edit()

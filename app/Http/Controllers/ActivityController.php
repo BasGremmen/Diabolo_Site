@@ -7,6 +7,7 @@ use App\Category;
 use App\File;
 use Illuminate\Http\Request;
 use App\Http\Requests\ActivityRequest;
+use Illuminate\Support\Facades\Storage;
 use Auth;
 
 class ActivityController extends Controller
@@ -34,22 +35,23 @@ class ActivityController extends Controller
         $activities = $activities->sortByDesc('date');
 
         $category = Category::find($id);
+        $files = Storage::allFiles('img\general\default'); 
 
         if($category->isImportant && !$category->isText){
 
-            return view('posts.overview',compact('activities','category'));
+            return view('posts.overview',compact('activities','category'))->with('files',$files);
 
         } elseif($category->isImportant && $category->isText) {
 
-            return view('activities.textview',compact('activities','category'));
+            return view('activities.textview',compact('activities','category'))->with('files',$files);
 
         } elseif(!$category->isImportant && !$category->isText){
 
-            return view('activities.overview',compact('activities','category'));
+            return view('activities.overview',compact('activities','category'))->with('files',$files);
 
         } else {
 
-            return view('activities.textview',compact('activities','category'));
+            return view('activities.textview',compact('activities','category'))->with('files',$files);
 
         }
 

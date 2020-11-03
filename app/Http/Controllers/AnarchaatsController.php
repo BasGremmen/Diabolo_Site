@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Anarchaat;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 
 class AnarchaatsController extends Controller
 {
@@ -22,8 +23,9 @@ class AnarchaatsController extends Controller
     {
         $anarchaten = Anarchaat::latest()->get();
 		$users = User::all();
+        $files = File::allFiles('img\general\default'); 
 		
-		return view('anarchaat.overview',compact('anarchaten','users'));
+		return view('anarchaat.overview',compact('anarchaten','users'))->with('files',$files);
     }
 
     /**

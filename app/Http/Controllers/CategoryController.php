@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Category;
 use Illuminate\Http\Request;
 use Auth;
+use Illuminate\Support\Facades\File;
 
 class CategoryController extends Controller
 {
@@ -21,9 +22,10 @@ class CategoryController extends Controller
      */
     public function index()
     {
+        $files = File::allFiles('img\general\default'); 
         
 		$categories = Category::all();
-        return view('categories.overview');
+        return view('categories.overview')->with('files',$files);
     
     }
 
